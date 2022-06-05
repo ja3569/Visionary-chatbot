@@ -1,0 +1,132 @@
+html,
+body {
+  height: 100%;
+}
+
+.backgroundVideo{
+    display: table;
+    width: 150%;
+    height: 100%;
+    min-width: 150%;
+    min-height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+.site-wrapper {
+    position: absolute;
+    opacity: 67%;
+    width: 57%;
+    height: 60%;
+    top: 30%;
+    right: 23%;
+    color: blue;
+    background: white;
+    transition: all .5s ease;
+}
+.site-wrapper:hover{
+    opacity: 91%;
+    box-shadow: 10px 10px #F2D2BD;
+    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+h1{
+    font-family: "Merienda";
+    text-shadow: 1px 1px 2px black, 0 0 25px #6495ED, 0 0 5px #00B7EB;
+    font-size: 100px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 30px;
+    color: #FC6A03;
+    text-align: center;
+}
+
+.message{
+    font-family: "Merienda";
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: black;
+    text-align: center;
+    line-height: 1.3;
+    opacity: 0.8;
+}
+
+textarea{
+    width: 70%;
+    height: 30px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    color: white;
+    font-size: 35px;
+    background: #007FFF;
+}
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+
+.chat {
+  width: 100%;
+  height: 60vh;
+  max-height: 400px;
+  z-index: 2;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+
+
